@@ -13,7 +13,7 @@ int main()
         }
         else
         {
-            n=n-m;
+            n=n-m; 
         }
     }
     cout<<"gcd of a no is :"<<m;
