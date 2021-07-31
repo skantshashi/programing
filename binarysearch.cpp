@@ -3,7 +3,10 @@ using namespace std;
 int main()
 {
     int arr[8]={1,2,3,4,5,6,7,8};
-    int key, l=0,h=7,mid=(l+h)/2;
+    int key;
+    int l=arr[0];
+    int h=arr[7];
+    int mid=(l+h)/2;
     cout<<"enter a key : ";
     cin>>key;
     while(l<=h)
@@ -17,8 +20,7 @@ int main()
         {
             h=mid-1;
             }
-        else(key > arr[mid])
-        {
+        else{
             l=mid+1;
             }
     }
