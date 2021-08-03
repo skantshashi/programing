@@ -6,15 +6,16 @@ int main()
     int key;
     int l=arr[0];
     int h=arr[7];
-    int mid=(l+h)/2;
+    
     cout<<"enter a key : ";
     cin>>key;
     while(l<=h)
     {
+        int mid=(l+h)/2;
         if(key==arr[mid])
         {
             cout<<"found at "<<mid;
-            return 0;
+            return ;
         }
         else if(key < arr[mid])
         {
@@ -25,5 +26,5 @@ int main()
             }
     }
     cout<<"key not found ";
-    
+    return 0;
 }
