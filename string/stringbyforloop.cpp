@@ -4,13 +4,12 @@ int main()
 {
     int count=0;
  string str="skantshashi";
- for(int i=0;str[i]!='\0';i++)
+ string::iterator it;
+ for(it=str.begin();it!=str.end();it++)
  {
-     if(str[i]==str[0])
-     {
-         count++;
-     }
+       count++;
+     
  }
- cout<<count;
+ cout<<"length of string :"<<count;
     return 0;
 }
