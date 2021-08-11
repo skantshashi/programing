@@ -12,7 +12,6 @@ int main()
    {
        rev[i]=str[j];
    }
-   rev[len]='\0';
    if(str.compare(rev)==0)
    {
        cout<<"palindrome";
