@@ -6,6 +6,22 @@ class rectangle
            int length;
            int breadth;
     public:
+   /* rectangle()
+    {
+        length=0;
+        breadth=0;
+    }*/
+    rectangle(int l=0,int b=0)
+    {
+       
+       length=l;
+       breadth=b;
+    }
+    rectangle( const rectangle&rect)
+    {
+        length=rect.length;
+        breadth=rect.breadth;
+    }
     void setLength( int l)
     {
         if(l<0)
@@ -39,20 +55,12 @@ class rectangle
 };
 int main()
 {
- rectangle r;//stack
- r.setLength(10);
- r.setBreadth(15);
- cout<<"length is : "<<r.getLength()<<endl;
- cout<<"breadth is : "<<r.getBreadth()<<endl;
- cout<<"area :"<<r.area()<<endl;
- cout<<"perimeter is : "<<r.perimeter()<<endl;
- //using heap memory
- rectangle *p=new rectangle();
- p->setLength(10);
- p->setBreadth(5);
-  cout<<"length is : "<<p->getLength()<<endl;
- cout<<"breadth is : "<<p->getBreadth()<<endl;
- cout<<"area :"<<p->area()<<endl;
- cout<<"perimeter is : "<<p->perimeter()<<endl;
+    //rectangle r;  default parameter
+    rectangle r(10,87);//call by parameter
+ rectangle r2=r;//call by copy
+ 
+ cout<<"length is : "<<r2.getLength()<<endl;
+ cout<<"breadth is : "<<r2.getBreadth()<<endl;
+ cout<<"area is : "<<r2.area();
  return 0;
 }
