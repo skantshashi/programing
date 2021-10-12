@@ -1,19 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
-int factorial(int n)
+int fact(int n)
 {
     if(n>1)
     {
-        return n*factorial(n-1);
+        return n*fact(n-1);
     }
     else return 1;
 }
 int main()
 {
     int n;
-    cout<<"enter the no :"<<endl;
-     cin>>n;
-    int p=factorial(n);
-    cout<<"factorial is:"<<p;
+    cout<<"enter the no :";
+    cin>>n;
+    cout<<"factorial is:"<<fact(n);
     return 0;
 }
