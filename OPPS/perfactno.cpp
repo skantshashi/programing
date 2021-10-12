@@ -11,20 +11,11 @@ int main()
         if(n%i==0)
         {
             arr[j]=i;
+            sum=sum+arr[j];
             j++;
         }
     }
-  
-  for(int i=0;i<j;i++)
-  {
-      sum=sum+arr[i];
-  }
-    if(sum==n)
-    {
-        cout<<"the no is perfect";
-    }
-    else cout<<"the is not perfect no";
-
+    if(sum==n) cout<<n<<" is a perfect no";
+    else cout<<n<<" is not a perfect no";
     return 0;
-
 }
