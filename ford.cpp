@@ -20,22 +20,18 @@ int diff( int p, int q)
 }
 int factor(int lum)
 {   
-   int arr[n];
+
    for(int i=1;i<=lum;i++)
    {
-       if(lum%i==0)
-       {
-           arr[i]=i;
-       }
+      if(lum%i==0){
+           return i;
+      }
    }
-
-
- return count;
 }
 int main()
 {
-int  num;
-
+int i, num;
+int result[100];
 cout<<"enter a number :";
 cin>>num;
 int temp=num;
@@ -43,8 +39,17 @@ int revv=reverse(num);
 cout<<"reverse of no :"<<revv<<endl;
 int difff= diff(revv,temp);
 cout<<"abs diff of no :"<<difff<<endl;
-int result=factor(difff);
+i=factor(difff);
+while(i!=0)
+{
+result[i]=factor(difff);
+i++;
+}
 
+for(auto x:result)
+{
+    cout<<x;
+}
 
 return 0;
 }

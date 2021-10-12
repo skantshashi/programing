@@ -15,15 +15,16 @@ int main()
         if(key==arr[mid])
         {
             cout<<"found at "<<mid;
-            return ;
+            return 0;
         }
         else if(key < arr[mid])
         {
             h=mid-1;
-            }
-        else{
+        }
+        else
+        {
             l=mid+1;
-            }
+        }
     }
     cout<<"key not found ";
     return 0;
