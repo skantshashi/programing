@@ -11,7 +11,7 @@ class complex
         real=r;
         img=i;
     }
-    complex operator+(complex x)// or complex add(complex x)
+    complex add(complex x)// or complex operator+(complex x)
     {
         complex temp;
         temp.real=real+x.real;
@@ -29,7 +29,7 @@ int main()
     c2.real=2;c2.img=8;
     cout<<c2.real<<"+i"<<c2.img<<endl;
     complex c3;
-    c3=c1+c2;//or c3=c1.add(c2);
+    c3=c1.add(c2); /* c3=c1+c2;*/ 
     cout<<c3.real<<"+i"<<c3.img<<endl;
     return 0;
 }
