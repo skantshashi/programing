@@ -21,6 +21,7 @@ class derived : public base
 int main()
 {
     derived d;
+    
     d.fun2();
     //base b; because base in an abstract class but we can call by using  base class pointer
     base*p=new derived();
