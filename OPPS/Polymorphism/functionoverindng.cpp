@@ -9,7 +9,7 @@ class Base
         cout<<"Display Base"<<endl;
     }
 };
-class Derived :public Base
+class Derived : public Base
 {
    public:
    void display()
