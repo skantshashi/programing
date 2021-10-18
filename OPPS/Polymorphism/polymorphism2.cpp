@@ -37,7 +37,7 @@ class swift : public car
    }
 };
 int main()
-{
+{              
     car*p;
     p=new innova;
     p->start();
