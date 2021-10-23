@@ -6,7 +6,7 @@ using namespace std;
 */
 int main()
 {
-	int x=10,y=0,z;
+	int x=108,y=0,z;
 	try
 	{
 		if(y==0)
