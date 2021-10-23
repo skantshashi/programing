@@ -6,7 +6,7 @@ using namespace std;
 */
 int main()
 {
-	int x=10,y=2,z;
+	int x=10,y=0,z;
 	try
 	{
 		if(y==0)
@@ -16,7 +16,8 @@ int main()
 	}
 	catch(int e)
 	{
-		cout<<"division by zero"<<e<<endl;
+		cout<<"division by zero "<<e<<endl;
 	}
-	cout<<"bye"<<endl;
+	cout<<"bye program run successfuly"<<endl;
+	return 0;
 }
