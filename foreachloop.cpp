@@ -2,7 +2,7 @@
  using namespace std;
  int main()
  {
-    int A[10]{1,2,34,4,53,2,4,4};
+    int A[10]={1,2,34,4,53,2,4,4};
      for(auto x:A) //call by value i.e x
      {
          cout<<x<<" "<<endl;

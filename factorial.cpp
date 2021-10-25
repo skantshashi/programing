@@ -1,22 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main()
+ int fact(int n)
 {
-    int fact=1, n;
-    cout<<"enter the no :";
-    cin>>n;
-    if( (n==0) )
-    {   
-        n=1;
-        cout<<"factorial is :"<<n;
+    if(n<1)
+    {
+        return 1;
     }
     else
     {
-        for(int i=1;i<=n;i++)
-        {
-            fact=fact*i;
-        }
-        cout<<"factorial is :"<<fact;
+        return n*fact(n-1);
     }
+}
+int main()
+{
+    int n;
+    cout<<"enter the no :";
+    cin>>n;
+    cout<<"factorial is "<<fact(n);
     return 0;
 }
