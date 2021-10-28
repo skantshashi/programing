@@ -67,6 +67,7 @@ int main() {
     cin>>n;
     Stack s1;
     s1.push(n);
+    s1.isEmpty();
 return 0;
 }
     

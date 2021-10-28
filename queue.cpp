@@ -2,7 +2,7 @@
 
 using namespace std;
 
-#define SIZE 10
+#define SIZE 10 // #difine is use to give a name of constant value  before the program is compiled
 
 class Queue
 {
