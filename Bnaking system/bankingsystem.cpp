@@ -71,25 +71,25 @@ int main()
     switch(choice)
     {
         case 1:
-            cout<<"Enter First Name: ";
+            cout<<"Enter Your First Name: ";
             cin>>fname;
             cout<<"Enter Last Name: ";
             cin>>lname;
             cout<<"Enter initil Balance: ";
             cin>>balance;
             acc=b.OpenAccount(fname,lname,balance);
-            cout<<endl<<"Congradulation Account is Created"<<endl;
+            cout<<endl<<"Congratulation Your Account is Created"<<endl;
             cout<<acc;
             break;
         case 2:
-            cout<<"Enter Account Number:";
+            cout<<"Enter Your Account Number:";
             cin>>accountNumber;
             acc=b.BalanceEnquiry(accountNumber);
             cout<<endl<<"Your Account Details"<<endl;
             cout<<acc;
             break;
         case 3:
-            cout<<"Enter Account Number:";
+            cout<<"Enter Your Account Number:";
             cin>>accountNumber;
             cout<<"Enter Balance:";
             cin>>amount;
@@ -98,7 +98,7 @@ int main()
             cout<<acc;
             break;
         case 4:
-            cout<<"Enter Account Number:";
+            cout<<"Enter Your Account Number:";
             cin>>accountNumber;
             cout<<"Enter Balance:";
             cin>>amount;
@@ -107,7 +107,7 @@ int main()
             cout<<acc;
             break;
         case 5:
-            cout<<"Enter Account Number:";
+            cout<<"Enter Your Account Number:";
             cin>>accountNumber;
             b.CloseAccount(accountNumber);
             cout<<endl<<"Account is Closed"<<endl;
@@ -117,7 +117,7 @@ int main()
             break;
         case 7: break;
         default:
-            cout<<"\nEnter corret choice";
+            cout<<"\nEnter Your corret choice";
         exit(0);
     }
  }while(choice!=7);
