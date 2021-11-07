@@ -3,7 +3,9 @@
 using namespace std;
     
 /*program for ellipsis
-
+• Used for defining variable argument functions
+• … is used as symbol of ellipsis
+• Printf and scanf of C language are example of ellipsis
 */
 int sum(int n,...)
 {
