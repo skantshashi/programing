@@ -19,20 +19,20 @@ void insertionsort(int A[],int n)
 int main()
 {
     int n;
-    cout<<"enter the size of array :";
+    cout<<"Enter the size of array : ";
     cin>>n;
-    cout<<"enter the values of array :";
+    cout<<"Enter the values of array : ";
     int arr[n];
     for(int i=0;i<n;i++)
     {
         cin>>arr[i];
     }
-    cout<<" before sorting array :";
+    cout<<"Before sorting array :";
     for(auto a:arr)
        cout<<a<<" ";
     cout<<endl;
     insertionsort(arr,n);
-    cout<<" after sorting array :";
+    cout<<"After sorting array :";
     for(auto a:arr)
        cout<<a<<" "; 
        return 0;
