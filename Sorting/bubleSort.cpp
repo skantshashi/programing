@@ -6,14 +6,16 @@ void bubblesort(int A[],int n)
     {
         for(int j=0;j<n-1-i;j++)
         {
+            int flag=0;
             if(A[j]>A[j+1])
             {
                int temp;
                temp=A[j];
                A[j]=A[j+1];
                A[j+1]=temp;
-
+               flag=1;
             }
+            if(flag==0) break;
         }
     }
 }
