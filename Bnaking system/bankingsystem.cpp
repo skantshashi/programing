@@ -5,7 +5,9 @@
 #include<map>
 using namespace std;
 #define MIN_BALANCE 500
+
 class InsufficientFunds{};
+
 class Account
 {
 private:
@@ -247,7 +249,6 @@ Bank::~Bank()
 {
     ofstream outfile;
     outfile.open("Bank.data", ios::trunc);
- 
     map<long,Account>::iterator itr;
     for(itr=accounts.begin();itr!=accounts.end();itr++)
     {
