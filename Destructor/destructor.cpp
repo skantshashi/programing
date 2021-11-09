@@ -21,8 +21,7 @@ public:
 };
 void fun()
 {
-    
-	demo *p=new demo();
+    demo *p=new demo();
 	delete p;
 }
 int main()
