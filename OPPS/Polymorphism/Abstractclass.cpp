@@ -5,6 +5,7 @@ class base
     public:
     virtual void fun1()=0;
     virtual void fun2()=0;
+    
 };
 class derived : public base
 {
