@@ -29,7 +29,18 @@ for(i=0;i<10;i++)
  printf("%d ",A[i]);
  cout<<endl;
  
- SelectionSort(A,n);
+ //insertion sort
+ for(int i=1;i<n;i++){
+     int current=A[i];
+     int j=i-1;
+     while (j>=0 && current <A[j])
+     {
+        A[j+1]=A[j];
+        j--;
+     }
+     A[j+1]=current;
+
+ }
  
  for(i=0;i<10;i++)
  cout<<A[i]<<" ";
