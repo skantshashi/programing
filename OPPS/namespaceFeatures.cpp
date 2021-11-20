@@ -11,7 +11,14 @@ namespace second
 {
     void fun()
     {
-        cout<<"namespace second";
+        cout<<"namespace second \n";
+    }
+}
+namespace third
+{
+    void fun()
+    {
+        cout<<"namespace third";
     }
 }
 int main()
@@ -20,5 +27,7 @@ int main()
     fun();
     using namespace second;
     second::fun();
+    using namespace second;
+    third::fun();
     return 0;
 }
