@@ -16,9 +16,9 @@ namespace second
 }
 int main()
 {
-    using namespace second;
+    using namespace first;
     fun();
-   // using namespace second;
-   // second::fun();
+    using namespace second;
+    second::fun();
     return 0;
 }
