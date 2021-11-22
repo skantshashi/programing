@@ -36,6 +36,7 @@ int main()
     second::fun();
     using namespace third;
     third::fun();
+    
     using namespace fourth;
     fourth::fun();
     return 0;
