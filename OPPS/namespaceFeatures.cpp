@@ -21,13 +21,22 @@ namespace third
         cout<<"namespace third";
     }
 }
+namespace fourth
+{
+    void fun()
+    {
+        cout<<"namespace third";
+    }
+}
 int main()
 {
     using namespace first;
     fun();
     using namespace second;
     second::fun();
-    using namespace second;
+    using namespace third;
     third::fun();
+    using namespace fourth;
+    fourth::fun();
     return 0;
 }
