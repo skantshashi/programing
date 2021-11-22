@@ -18,7 +18,7 @@ namespace third
 {
     void fun()
     {
-        cout<<"namespace third";
+        cout<<"namespace third \n";
     }
 }
 namespace fourth
